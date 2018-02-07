@@ -1,0 +1,48 @@
+That's How You Get Ants
+Episode 2: The go-pow-proxy
+
+Aidan Coyle
+Supporting Services
+acoyle@enova.com
+
+* 8B Development Environment
+
+Set up so that you can easily access your own copy of everything you need.
+
+Uses pow to link custom URLs to local services which get stopped and started as needed.
+
+* So It's 2015...
+
+We're launching the Go version of helios.
+
+We have no solution for how we do Go in development.
+
+We wanted something we could drop in to the existing environment.
+
+* First Iteration
+
+A tiny hacked together rack app based on a proxying library (that we monkey-patched).
+
+It was quick, dirty, and cute.
+
+* Design Issues
+
+The library we were using wasn't meant for this.
+
+Writing what amounted to a process manager was too complex.
+
+* But We Never Fixed It
+
+For a vartiety of reasons:
+
+- It kinda worked.
+- Nobody really owned it.
+- It was gonna be hard.
+
+* So We Have Ants
+
+Lessons Learned:
+
+- Rip off your band-aids when you can.
+- Treat development as a first class citizen.
+- Throw away your POCs
